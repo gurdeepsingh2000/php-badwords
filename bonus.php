@@ -10,9 +10,24 @@
 
 <?php
 
-$name = $_GET['name'];
+$Name = $_GET['name'];
+$Surname = $_GET['surname'];
+$CompleteName = "{$Name} {$Surname}";
 
-echo "$name";
+echo ucwords("$CompleteName");
+
+$position = strpos($CompleteName, 'Elon');
+
+if(strpos($CompleteName, 'Elon') !== false) {
+    echo "<br/>L'ho trovato!";
+}
+
+
+
+
+
+
+
 ?>
 
 
