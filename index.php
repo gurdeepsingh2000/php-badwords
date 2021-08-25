@@ -18,7 +18,7 @@ $lunghezza = strlen($paragrafo);
 echo "<p><b>{$paragrafo} <br> la lunghezza di caratteri è di {$lunghezza}</b></p>";
 $badWord = $_GET['name'];
 $BadWordPar = str_ireplace($badWord, '***', $paragrafo);
-$lunghezzaBadwordPar = strlen($BadWordPar)
+$lunghezzaBadwordPar = strlen($BadWordPar);
 echo "<p><b>{$BadWordPar} <br> la lunghezza di caratteri è di {$lunghezzaBadwordPar}</b></p>";
 ?>
 
